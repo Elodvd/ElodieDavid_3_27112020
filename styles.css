@@ -1,0 +1,138 @@
+
+/* Page entière*/
+
+body
+{
+    
+font-family: 'Raleway', Arial, sans-serif;   
+    
+}
+
+#bloc_page
+{
+    width: 1200px;
+    margin: auto;
+}
+
+
+
+/* En tête */
+
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-left:30px;
+    position : relative ;
+    top:0px;
+    left : 400px;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+
+
+/* contenu principal */
+
+#hebergements
+{
+   display : flex; 
+}
+
+article
+{
+display : flex;
+flex-wrap: wrap;
+align-content: space-around;
+
+    
+}
+
+.vignette_hebergement
+{
+   width : 5px;;
+    
+
+}
+
+.photo-hebergement
+
+{
+ width:100px ;
+ height: auto ;
+    
+}
+
+.photo-pop
+
+{
+ width:100px ;
+ height: auto ;
+}
+
+
+#activites
+{
+   display : flex; 
+}
+
+#photo-port
+{
+ width:100px ;
+ height: auto ;
+    
+}
+#photo-fort
+{
+ width:100px ;
+ height: auto ;
+    
+}
+
+#photo-iles
+{
+ width:100px ;
+ height: auto ;
+    
+}
+
+#photo-calanques
+{
+ width:100px ;
+ height: auto ;
+    
+}
+
+#photo-notre-dame
+{
+ width:100px ;
+ height: auto ;
+    
+}
+
+#photo-parc
+{
+ width:100px ;
+ height: auto ;
+}
+
+
+
+
+
+/* Pied de page */
+footer div
+{
+    
+ 
+    
+    
+}
