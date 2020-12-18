@@ -1,19 +1,62 @@
 
 /* Page entière*/
 
+@font-face
+{
+    font-family:"Raleway-Bold";
+    src:url("Raleway-ExtraBold.ttf");  
+}
+
+@font-face
+{
+    font-family:"Raleway";
+    src:url("Raleway-Regular.ttf");   
+}
+
+
+
+
 body
 {
-    
-font-family: 'Raleway', Arial, sans-serif;   
-    
+    font-family:"Raleway",Arial, sans-serif;       
+}
+
+h1
+{
+    font-size:16px;
+    font-weight: bold;
+    color:black;
+    font-family: "Raleway-Bold", Impact;      
+
+}
+
+h2, nav
+{
+    font-size: 12px;      
+}
+
+h3
+{
+    font-size: 10px;
+    font-weight: bold;
+    color:black;
+}
+
+p
+{
+    font-size: 9px;
 }
 
 #bloc_page
 {
-    width: 1200px;
+    width: 900px;
     margin: auto;
 }
 
+a
+{
+    text-decoration: none;    
+}
 
 
 /* En tête */
@@ -38,90 +81,196 @@ nav a
     text-decoration: none;
 }
 
+.recherche
+{
+    display:flex;
+    align-items: flex-end; 
+    height:50px;
+    background-color: aqua;
+}
+
+
+.#map-marker /* ne fonctionne plus */
+{ 
+    height :110px ;
+    width : auto;
+    border : 2px solid #F2F2F2;
+    border-bottom-left-radius : 7px;
+    border-top-left-radius:7px; ;
+    background-color: #F2F2F2;
+    padding:5px; 
+}
+
+input
+{
+    height: 35px;    
+}
+
+.bouton_bleu
+{
+    text-decoration: none;
+    border:solid #0065FC;
+    border-top-right-radius:7px;
+    border-bottom-right-radius:7px;
+    background-color: #0065FC;
+    color:white;
+    padding:3px;
+    height:25px;
+    width: auto;
+}
+
 
 
 /* contenu principal */
 
 #hebergements
 {
-   display : flex; 
+    display : flex; 
+    height: 600px; 
+    width: 100%;
 }
 
 article
 {
-display : flex;
-flex-wrap: wrap;
-align-content: space-around;
+    border: solid color : #F2F2F2 ;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    width : 70%;
+    height: 500px;
+    padding:10px;
+}
 
-    
+#conteneur-vignettes-article
+{
+    display:flex;
+    flex-flow: row wrap;
+    height:500px;   
 }
 
 .vignette_hebergement
 {
-   width : 5px;;
-    
-
+    width : 180px;
+    height:180px;
+    border:solid white;
+    border-radius: 20px; 
+    background-color: white;
+    margin:5px;
 }
 
 .photo-hebergement
 
 {
- width:100px ;
- height: auto ;
+    width:170px ;
+    height: auto ;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     
+}
+
+aside
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid color : #F2F2F2 ;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    width :30%;
+    margin-left:5px;
+    height: 500px;
+}
+
+.pop
+{
+    width : 200px;
+    height:120px;
+    border:solid white;
+    border-radius: 20px; 
+    background-color: white;
+    margin:20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .photo-pop
 
 {
- width:100px ;
- height: auto ;
+     width:100px ;
+     height: auto ;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
 }
 
 
 #activites
 {
-   display : flex; 
+    height : 500px;
+    width: 100%;
 }
 
+#conteneur-vignettes-activites 
+{
+    display: flex;
+    flex-flow: column wrap;
+    height:400px;
+  
+}
+#port, #fort, #iles, #calanques, #Notre-Dame, #parc
+{
+    border:solid black;
+    border-radius: 20px; 
+    background-color: white;
+    margin:10px;
+}
+
+    
 #photo-port
 {
- width:100px ;
- height: auto ;
-    
+    width:auto;
+    height: 300px ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
 }
+
 #photo-fort
 {
- width:100px ;
- height: auto ;
-    
+    width:200px;
+    height: auto ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;  
 }
 
 #photo-iles
 {
- width:100px ;
- height: auto ;
-    
+    width:200px ;
+    height: auto ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;  
 }
 
 #photo-calanques
 {
- width:100px ;
- height: auto ;
-    
+    width:auto ;
+    height: 300px ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;  
 }
 
 #photo-notre-dame
 {
- width:100px ;
- height: auto ;
-    
+    width:200px ;
+    height: auto ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;   
 }
 
 #photo-parc
 {
- width:100px ;
- height: auto ;
+    width:200px ;
+    height: auto ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 
@@ -129,10 +278,16 @@ align-content: space-around;
 
 
 /* Pied de page */
+footer 
+{
+    border: solid color : #F2F2F2 ;
+    background-color: #F2F2F2;   
+    display: flex;
+}
+
 footer div
 {
-    
- 
-    
+    padding : 40px;  
+	padding-right:100px;
     
 }
