@@ -79,15 +79,29 @@ nav ul
 
 nav li
 {
-    padding:20px;
-	
-    
+    padding:20px;   
 }
 
-nav a
+
+
+nav a:link
 {
     text-decoration: none; 
 	color: black;
+}
+
+nav a:visited
+{
+    text-decoration: none; 
+	color: black;
+}
+
+nav a:focus
+{
+color:#0065FC;	
+border-top: solid #0065FC 2px;
+padding:20px;
+	
 }
 
 .texte-bleu
@@ -95,11 +109,6 @@ nav a
 	color:#0065FC;
 }
 
-#trait
-{
-border-top: solid 3px #0065FC;
-padding-top:25px;
-}
 
 .barre-recherche
 {
@@ -163,6 +172,7 @@ padding-top:25px;
 {
 padding-right:10px;	
 padding-left: 10px;
+color:black;
 	
 	
 }
@@ -225,20 +235,21 @@ padding: 10px;
     border-radius: 20px;
     background-color: #F2F2F2;
     width : 70%;
-    height: 500px;
-    padding:10px;
+    height: 600px;
+	padding:1%;
 }
 
 #conteneur-vignettes-article
 {
     display:flex;
     flex-flow: row wrap;
+	justify-content: space-around;
     height:500px;   
 }
 
 .vignette_hebergement
 {
-    width : 180px;
+    width : 30%;
     height:180px;
     border-radius: 20px; 
     background-color: white;
@@ -264,7 +275,8 @@ aside
     background-color: #F2F2F2;
     width :30%;
     margin-left:5px;
-    height: 500px;
+    height: 600px;
+	padding:1%;
 }
 
 #en-tete-pop
@@ -276,8 +288,8 @@ aside
 
 .pop
 {
-    width : 200px;
-    height:120px;
+    width : 80%;
+    height:25%;
     border-radius: 20px; 
     background-color: white;
     margin:20px;
@@ -299,6 +311,7 @@ aside
 {
     height : 500px;
     width: 100%;
+	margin-top: 100px;
 }
 
 #conteneur-vignettes-activites 
