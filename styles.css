@@ -14,8 +14,6 @@
 }
 
 
-
-
 body
 {
     font-family:"Raleway",Arial, sans-serif;
@@ -24,7 +22,7 @@ body
 
 h1
 {
-    font-size:25px;
+    font-size:22px;
     font-weight: bold;
     color:black;
     font-family: "Raleway-Bold", Impact;      
@@ -33,14 +31,16 @@ h1
 
 h2, nav
 {
-    font-size: 18px;      
+    font-size: 20px;
+	font-family: "Raleway";
 }
 
 h3
 {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 15px;
+	font-family: "Raleway-Bold";
     color:black;
+	padding-left:20px;
 }
 
 p
@@ -263,7 +263,34 @@ padding: 10px;
     height: auto ;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    
+}
+
+#Cannebiere
+{
+	background-image:url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+	width: 170px;
+	height:auto;
+	background-size:cover;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;	
+}
+
+#Hotel-Port
+{
+	background-image:url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+	background-size:cover;
+	width: 170px;
+	height:auto;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;	
+}
+
+.vignette_hebergement
+{
+    width : 30%;
+    height:180px;
+    border-radius: 20px; 
+    margin:5px;
 }
 
 aside
@@ -309,84 +336,106 @@ aside
 
 #activites
 {
-    height : 500px;
+    height : 550px;
     width: 100%;
 	margin-top: 100px;
+	
 }
 
 #conteneur-vignettes-activites 
 {
     display: flex;
     flex-flow: column wrap;
+	justify-content: space-between;
+	align-content: space-between;
     height:400px;
-  
+	width : 100%;
 }
-#port, #fort, #iles, #calanques, #Notre-Dame, #parc
+
+.act
 {
-    border-radius: 20px; 
-    background-color: white;
-    margin:10px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	box-shadow: 4px 4px 5px #F2F2F2;
+	width: 280px;
 }
 
-    
-#photo-port
+#port
 {
-    width:auto;
-    height: 300px ;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-
+	background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)	;
+	width:280px ;
+    height: 350px ;
+	background-size: cover;	
+	background-position: center;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	
 }
 
-#photo-fort
+#fort
 {
-    width:200px;
-    height: auto ;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;  
+	background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+	width:280px ;
+    height: 140px ;
+	background-size: cover;	
+	background-position: center;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
-#photo-iles
+
+#iles
 {
-    width:200px ;
-    height: auto ;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;  
+	background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+	width:280px ;
+    height: 120px ;
+	background-size: cover;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
-#photo-calanques
+#calanques
 {
-    width:auto ;
-    height: 300px ;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;  
+	background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg)	;
+	width:280px ;
+    height: 350px ;
+	background-size: cover;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
-#photo-notre-dame
+#Notre-Dame
 {
-    width:200px ;
-    height: auto ;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;   
+	background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+	width:280px ;
+    height: 125px ;
+	background-size: cover;	
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
-#photo-parc
+#parc
 {
-    width:200px ;
-    height: auto ;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+	background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+	width:280px ;
+    height: 150px ;
+	background-size: cover;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
 
 
-
+*/
 
 /* Pied de page */
 footer 
 {
     background-color: #F2F2F2;   
 	width: 100%;
+	
+	
 }
 
 .txt-footer
@@ -394,10 +443,18 @@ footer
 	width: 80%;
 	display: flex;
 	justify-content: space-between;
-	padding:15px;
+	margin: 30px;
+	
+	
 }
 
-div footer
+.bloc-txt
 {
-	justify-content: space-around;
+display: flex;
+flex-flow: column wrap;
+	
+	
 }
+
+
+
