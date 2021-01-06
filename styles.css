@@ -251,7 +251,6 @@ padding: 10px;
 {
     width : 30%;
     height:180px;
-    border-radius: 20px; 
     background-color: white;
     margin:5px;
 }
@@ -267,17 +266,18 @@ padding: 10px;
 
 #Cannebiere
 {
-	background-image:url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+	background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 	width: 170px;
-	height:auto;
-	background-size:cover;
+	height:100px;
+	background-size: cover;
+	background-position: bottom;
 	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;	
+	border-top-left-radius: 10px;*/
 }
 
 #Hotel-Port
 {
-	background-image:url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+	background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 	background-size:cover;
 	width: 170px;
 	height:auto;
@@ -363,7 +363,7 @@ aside
 
 #port
 {
-	background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)	;
+	background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg")	;
 	width:280px ;
     height: 350px ;
 	background-size: cover;	
@@ -375,7 +375,7 @@ aside
 
 #fort
 {
-	background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+	background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 	width:280px ;
     height: 140px ;
 	background-size: cover;	
@@ -397,7 +397,7 @@ aside
 
 #calanques
 {
-	background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg)	;
+	background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg")	;
 	width:280px ;
     height: 350px ;
 	background-size: cover;
