@@ -4,6 +4,9 @@
         <title>  Reservia </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
         
         <link rel="stylesheet" href="styles.css" />
         
@@ -41,7 +44,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <form> 
-                        <input id="text" type="text" name ="lieu" placeholder="Marseille, France">
+                        <input id="text" type="text" name ="lieu" placeholder="Marseille, France" size="30">
                     </form>
 					<form> 
 						<input id="bouton-bleu" type="submit" value="Rechercher" name ="recherche">
@@ -258,14 +261,18 @@
                 <aside>
 					<div id="en-tete-pop">
 						<h2> Les plus populaires </h2>
-						<i class="fas fa-chart-line"></i>
+						<div id="logo-fleche"> 
+							<i class="fas fa-chart-line"></i>
+						</div>										
 					</div>
-
+						
                     <a class="pop" href="#"> 
                         <div id="Hotel-Soleil" class="photo-pop"> </div>
                         <div class="descriptif-pop">
-							<h3>Hôtel Le soleil du<br>matin</h3>
-                            <p> Nuit à partir de 128€</p>
+							<div class="test">
+								<h3>Hôtel Le soleil du <br>matin</h3>
+								<p> Nuit à partir de 128€</p>
+							</div>
 							<div class="ligne-etoiles">	
 									<div class="etoile-bleue">
                         				<i class="fas fa-star"></i> 
@@ -282,7 +289,8 @@
 									<div class="etoile-bleue">
                         				<i class="fas fa-star"></i> 
 									</div>
-								</div>
+								
+							</div>
 						</div>
                     </a>
 
@@ -347,32 +355,32 @@
 				
 						<a class="act" href="#">
 							<div id="port"></div>
-							<h3>Vieux Port</h3> 
+							<h4 class="txt-activites">Vieux Port</h4> 
 						</a>
 
 						<a class ="act"  href="#">
 							<div id="fort"></div>
-							<h3>Fort de Pomègues</h3>
+							<h4 class="txt-activites">Fort de Pomègues</h4>
 						</a>
 
 						<a  class="act" href="#">
 							<div id="iles"></div>
-							<h3>Îles du Frioul</h3> 
+							<h4 class="txt-activites">Îles du Frioul</h4> 
 						</a>
 
 						<a  class="act" href="#">
 							<div id="calanques"></div>
-							<h3>Parc National des Calanques</h3> 
+							<h4 class="txt-activites">Parc National des Calanques</h4> 
 						</a>       
 					
 						<a  class="act" href="#">
 							<div id="Notre-Dame"></div>
-							<h3>Notre-Dame-de-la-Garde</h3> 
+							<h4 class="txt-activites">Notre-Dame-de-la-Garde</h4> 
 						</a>      
 
 						<a  class="act" href="#">
 							<div id="parc"></div>
-							<h3>Parc Longchamp</h3> 
+							<h4 class="txt-activites">Parc Longchamp</h4> 
 						</a>
 				  
 				</section>
@@ -381,20 +389,19 @@
             <footer>
 				<div class="txt-footer">
 					<section class="bloc-txt">
-						<h2>A propos </h2>
+						<h3>A propos </h3>
 							<a href="#">Fonctionnement du site</a>
-							<a href="#">Conditions générales de vente</a>
-							<a href="#">Données et confidentialité</a>
+						<a href="#">Conditions générales de vente</a>					
 					</section>    
 
 					<section class="bloc-txt">
-						<h2> Nos hébergements </h2>
+						<h3> Nos hébergements </h3>
 							<a href="#">Charte qualité</a>
 							<a href="#">Soumettre votre hôtel</a>
 					</section>
 
 					 <section class="bloc-txt">
-						<h2> Assistance </h2>
+						<h3> Assistance </h3>
 						 	<a href="#">Centre d'aide</a>
 						 	<a href="#">Nous contacter</a>
 					</section>

@@ -1,50 +1,68 @@
 
 /* Page entière*/
-
-@font-face
+*
 {
-    font-family:"Raleway-Bold";
-    src:url("Raleway-ExtraBold.ttf");  
-}
-
-@font-face
-{
-    font-family:"Raleway";
-    src:url("Raleway-Regular.ttf");   
+font-family:'Raleway', 'Arial', sans-serif;
 }
 
 
 body
 {
-    font-family:"Raleway",Arial, sans-serif;
 	margin:30px;
 }
 
 h1
 {
-    font-size:22px;
+    font-size:20px;
     font-weight: bold;
     color:black;
-    font-family: "Raleway-Bold", Impact;      
-
 }
 
-h2, nav
+h2
 {
-    font-size: 20px;
-	font-family: "Raleway";
+    font-size: 18px;
+	font-weight: bold;
+}
+
+nav
+{
+	
+font-size: 15px;	
+	
 }
 
 h3
 {
-    font-size: 15px;
-	font-family: "Raleway-Bold";
-    color:black;
+    font-size: 17px;
+	color:black;
+	font-weight: bold;
+}
+
+h4
+{
+ font-size: 15px;
+ color:black;
+ font-weight: bold;   
+}
+
+h5
+{
+font-size: 15px;
+color:black;	
+	
 }
 
 p
 {
     font-size: 14px;
+}
+
+input::placeholder 
+{
+  	font-size: 15px;
+	color:black;
+	font-weight: bold;
+	padding-left:10px;
 }
 
 #bloc_page
@@ -58,6 +76,7 @@ a
 {
     text-decoration: none;
 	color:black;
+	font-family: 'Raleway', 'Arial', sans-serif;
 }
 
 
@@ -75,11 +94,12 @@ nav ul
 {
     list-style-type: none;
     display: flex;
+	margin-right:40px;
 }
 
 nav li
 {
-    padding:20px;   
+    padding:30px; 
 }
 
 
@@ -107,6 +127,7 @@ padding:20px;
 .texte-bleu
 {
 	color:#0065FC;
+	font-weight: bold;
 }
 
 
@@ -173,8 +194,7 @@ padding:20px;
 padding-right:10px;	
 padding-left: 10px;
 color:black;
-	
-	
+font-size: 14px;	
 }
 
 .bloc-filtre:hover
@@ -200,8 +220,9 @@ color:#0065FC;
 #nbr-dispos
 {
 	display: flex;
-	width: 32%;
 	justify-content: space-between;
+	align-items: center;
+	width: 33%;
 	margin-top:30px;
 
 }
@@ -209,15 +230,12 @@ color:#0065FC;
 {
 color: 	#0065FC;
 border:#F2F2F2 solid 2px;
-border-radius: 60px;
-height: 8px;
-width: 8px;
+border-radius: 40px;
+font-size:12px;
 display: flex;
 align-items: center;
 justify-content: center;	
-padding: 10px;
-
-
+padding: 6px 9px 6px 9px;
 }
 
 
@@ -228,7 +246,7 @@ padding: 10px;
     display : flex; 
 	justify-content: space-between;
     height: 600px; 
-    width: 100%;
+    width: 95%;
 }
 
 .hebergements-resultats
@@ -237,7 +255,7 @@ padding: 10px;
     background-color: #F2F2F2;
     width : 70%;
     height: 600px;
-	padding:1%;
+	padding:2%;
 	margin-right: 30px;
 }
 
@@ -245,34 +263,29 @@ padding: 10px;
 {
     display:flex;
     flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-between;
     height:500px;   
 }
 
 .vignette_hebergement
 {
     width: 228px;
-	height:220px;
+	height:200px;
 	border-radius: 10px;
 	background-color: white;
 	box-shadow:2px 2px 10px #d9d9d9;
-	
 }
 
 .photo-hebergement
  {
 	width: 220px;
-	height:150px;
+	height:110px;
 	background-size: cover;
 	background-position: bottom;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px; 
-	margin:4px;
-	
-	
+	margin:4px;	
 }
-
-
 
 #Cannebiere
 {
@@ -291,6 +304,7 @@ padding: 10px;
 #Hotel-Mer
 {
 	background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+	background-position:center;
 }
 #Auberge-Panier
 {
@@ -300,6 +314,7 @@ padding: 10px;
 #Hotel-Amina
 {
 	background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+	background-position:center;
 }
 
 .ligne-etoiles
@@ -328,10 +343,7 @@ padding: 10px;
 {
 	
 line-height: 5px;	
-margin-left:10px;
-margin-top:-2px;
-
-	
+margin-left:15px;
 }
 
 aside
@@ -344,7 +356,7 @@ aside
     width :30%;
     margin-left:5px;
     height: 600px;
-	padding:1%;
+	padding:2%;
 }
 
 #en-tete-pop
@@ -353,13 +365,20 @@ aside
 	width: 85%;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: -15px;
 }
+
+#logo-fleche
+{
+	font-size: 15px;
+}
+
 
 .pop
 {
-    width : 85%;
-    height:25%;
-    border-radius: 20px; 
+    width : 92%;
+    height:23%;
+    border-radius: 10px; 
     background-color: white;
     margin:20px;
     display: flex;
@@ -378,9 +397,19 @@ aside
 	 background-position: center;
      border-top-left-radius: 10px;
      border-bottom-left-radius: 10px;
+	 margin-left:-8px;
 }
 
 
+.descriptif-pop
+{
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	height:120px;	
+	padding-bottom:15px;
+	margin-right: 15px;
+}
 
 
 
@@ -399,14 +428,10 @@ aside
 	background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 
-
-
-
-
 #activites
 {
-    height : 550px;
-    width: 100%;
+    height : 470px;
+    width: 95%;
 	margin-top: 100px;
 	
 }
@@ -427,14 +452,14 @@ aside
 	flex-direction: column;
 	border-radius: 10px;
 	box-shadow: 4px 4px 5px #F2F2F2;
-	width: 280px;
+	width: 260px;
 }
 
 #port
 {
 	background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg")	;
-	width:280px ;
-    height: 350px ;
+	width:260px ;
+    height: 340px ;
 	background-size: cover;	
 	background-position: center;
 	border-top-right-radius: 10px;
@@ -445,7 +470,7 @@ aside
 #fort
 {
 	background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-	width:280px ;
+	width:260px ;
     height: 140px ;
 	background-size: cover;	
 	background-position: center;
@@ -457,7 +482,7 @@ aside
 #iles
 {
 	background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-	width:280px ;
+	width:260px ;
     height: 120px ;
 	background-size: cover;
 	border-top-right-radius: 10px;
@@ -467,8 +492,8 @@ aside
 #calanques
 {
 	background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg")	;
-	width:280px ;
-    height: 350px ;
+	width:260px ;
+    height: 340px ;
 	background-size: cover;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -477,7 +502,7 @@ aside
 #Notre-Dame
 {
 	background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-	width:280px ;
+	width:260px ;
     height: 125px ;
 	background-size: cover;	
 	border-top-right-radius: 10px;
@@ -487,13 +512,17 @@ aside
 #parc
 {
 	background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-	width:280px ;
+	width:260px ;
     height: 150px ;
 	background-size: cover;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 }
 
+.txt-activites
+{
+margin-left:15px;		
+}
 
 
 /* Pied de page */
@@ -508,17 +537,17 @@ footer
 	width: 80%;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
 	margin: 30px;
-	
-	
+	padding:10px;	
 }
 
 .bloc-txt
 {
 display: flex;
 flex-flow: column wrap;
-	
-	
+font-size: 14px;
+line-height: 30px;
 }
 
 
