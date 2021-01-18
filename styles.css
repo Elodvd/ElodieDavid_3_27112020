@@ -168,6 +168,7 @@ padding:20px;
 }
 
 
+
 .bloc-filtre
 {
 	display: flex;
@@ -571,7 +572,6 @@ line-height: 30px;
 {
 /* header Tablette */	
 
-
 .filtres
 {
 	width: 100% ;
@@ -592,11 +592,19 @@ line-height: 30px;
 }
 
 	
+	
 .hebergements-resultats
 {  
 	width: 100%;
+	height:750px;
 }
 
+	#conteneur-vignettes-article
+
+{
+	height:650px;
+}
+	
 aside
 {
     display: inline;
@@ -645,7 +653,7 @@ margin-top:20px;
 	
 article
 {
-   height : 500px;
+   height : 700px;
 	margin-top: 50px;
 }
 
@@ -675,3 +683,245 @@ article
 	
 }
 
+/*VERSION SMARTPHONE*/
+
+@media screen and (max-width: 719px) 
+{
+	
+
+h1
+{
+    font-size:30px;
+}
+
+h2
+{
+    font-size: 28px;
+	font-weight: bold;
+}
+
+nav
+{	
+font-size: 26px;		
+}
+
+h3
+{
+ font-size: 20px;
+}
+
+h4
+{
+font-size: 19px;   
+}
+
+h5
+{
+font-size: 18px;
+}
+
+p
+{
+    font-size: 17px;
+}
+
+input::placeholder 
+{
+  	font-size: 18px;
+}
+
+/* En tête */
+
+header
+{
+	align-items: center;
+	margin: 15px;
+}
+	
+.ancres
+{
+    display: none;
+}
+
+
+.barre-recherche
+{
+  	justify-content: center;
+}
+
+.filtres
+{
+	margin-top:10px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+	
+.bloc-filtre
+{
+	align-items: center;
+	width:130px;
+}
+
+.texte-filtre
+{
+	font-size: 15px;	
+}
+
+
+#nbr-dispos
+{
+	width: 100%;
+	margin-top:10px;
+	justify-content: flex-start;
+}
+
+
+/* contenu principal */
+
+#main-content
+{
+	flex-direction: column-reverse;
+}
+
+.hebergements-resultats
+{
+    
+    background-color: #F2F2F2;
+	margin-top: 20px;
+    width : 100%;
+	height: 850px;
+}
+
+#conteneur-hebergements-resultats
+{
+
+margin:20px;
+height: 800px;	
+}
+
+#conteneur-vignettes-article
+{
+    height:700px; 
+}
+
+.vignette_hebergement
+{
+    width: 300px;
+	height:200px;
+}
+
+.photo-hebergement
+ {
+	width: 286px;
+	height:110px;
+}
+
+
+aside
+{
+    width :100%;
+	height: 700px;	
+}
+
+#conteneur-aside
+{
+margin:0px;	
+}
+
+#en-tete-pop
+{
+	width: 100%;
+}
+
+#logo-fleche
+{
+	font-size: 20px;
+}
+
+#conteneur-pop
+{
+	height:600px;
+	width:100%;
+	margin-top:0px;
+}
+
+.pop
+{
+    height:140px;
+	width :600px;
+    
+}
+
+.photo-txt-pop
+{
+    height:134px;
+	width : 600px;
+}
+
+.photo-pop
+
+{  
+	 width:60%;	 
+}
+
+.descriptif-pop
+{
+	justify-content: space-around;
+}
+
+article
+{
+   height : 700px;
+	margin-top: 50px;
+}
+
+#conteneur-vignettes-activites 
+{
+    display: flex;
+    flex-flow: row wrap;
+    height:450px;	
+}
+
+.act
+{
+	
+	width: 320px;
+	height: 210px;
+}
+
+
+#port, #fort, #iles, #calanques, #Notre-Dame, #parc
+{
+
+	width:320px ;
+    height: 200px ;
+}
+/* Pied de page */
+footer 
+{
+    background-color: #F2F2F2; 
+}
+
+.txt-footer
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0px;
+	padding:0px;	
+}
+
+.bloc-txt
+{
+display: flex;
+flex-flow: column wrap;
+align-items: center;
+font-size: 14px;
+line-height: 30px;
+}	
+	
+}
