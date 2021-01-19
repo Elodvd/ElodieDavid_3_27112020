@@ -7,7 +7,7 @@ font-family:'Raleway', 'Arial', sans-serif;
 
 body
 {
-margin:2%;	
+	margin: 5%;
 }
 
 
@@ -78,6 +78,7 @@ header
 {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 
@@ -570,117 +571,126 @@ line-height: 30px;
 
 @media all and (min-width: 720px) and (max-width:1200px)
 {
-/* header Tablette */	
-
-.filtres
-{
-	width: 100% ;
-}	
-
-/* Hebergements Tablette */	
 	
-#main-content
-{
-	flex-direction: column-reverse;
-}	
-	
+	body
+	{
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	}
 
 	
-#nbr-dispos
-{
-	width: 45%;
-}
+	/* header Tablette */	
 
-	
-	
-.hebergements-resultats
-{  
-	width: 100%;
-	height:750px;
-}
+	.filtres
+	{
+		width: 100% ;
+	}	
 
-	#conteneur-vignettes-article
+	/* Hebergements Tablette */	
 
-{
-	height:650px;
-}
-	
-aside
-{
-    display: inline;
+	#main-content
+	{
+		flex-direction: column-reverse;
+	}	
+
+
+
+	#nbr-dispos
+	{
+		width: 45%;
+	}
+
+
+
+	.hebergements-resultats
+	{  
+		width: 100%;
+		height:750px;
+	}
+
+		#conteneur-vignettes-article
+
+	{
+		height:650px;
+	}
+
+	aside
+	{
+		display: inline;
+		width:100%;
+		flex-direction: row;
+		height: 360px;
+		margin-bottom: 20px;
+	}
+
+
+	#conteneur-pop
+	{
+
 	width:100%;
+	height:250px;
 	flex-direction: row;
-	height: 360px;
-	margin-bottom: 20px;
-}
+	margin-top:20px;
+	}
 
-	
-#conteneur-pop
-{
+		.pop
+	{
+		height:250px;
+		width : 30%;
+	}	
 
-width:100%;
-height:250px;
-flex-direction: row;
-margin-top:20px;
-}
+	.photo-txt-pop
+	{
+		display: inline;
+		justify-content: flex-start;
+		height: 100%;
+	}
 
-	.pop
-{
-    height:250px;
-	width : 30%;
-}	
-	
-.photo-txt-pop
-{
-	display: inline;
-	justify-content: flex-start;
-	height: 100%;
-}
-	
-.descriptif-pop
-{
-	height:30%;		
-}
-	
-.photo-pop
-{
-     height: 130px ;
-	 width:100% ;
-	 border-top-right-radius: 10px;
-	 border-bottom-left-radius: 0px;
-	 margin-left: 0px;
-}
-	
-article
-{
-   height : 700px;
-	margin-top: 50px;
-}
+	.descriptif-pop
+	{
+		height:30%;		
+	}
 
-#conteneur-vignettes-activites 
-{
-    display: flex;
-    flex-flow: row wrap;
-    height:450px;	
-}
+	.photo-pop
+	{
+		 height: 130px ;
+		 width:100% ;
+		 border-top-right-radius: 10px;
+		 border-bottom-left-radius: 0px;
+		 margin-left: 0px;
+	}
 
-.act
-{
-	
-	width: 280px;
-	height: 210px;
-}
+	article
+	{
+	   height : 700px;
+		margin-top: 50px;
+	}
+
+	#conteneur-vignettes-activites 
+	{
+		display: flex;
+		flex-flow: row wrap;
+		height:450px;	
+	}
+
+	.act
+	{
+
+		width: 280px;
+		height: 210px;
+	}
 
 
-#port, #fort, #iles, #calanques, #Notre-Dame, #parc
-{
+	#port, #fort, #iles, #calanques, #Notre-Dame, #parc
+	{
 
-	width:280px ;
-    height: 200px ;
-}
+		width:280px ;
+		height: 200px ;
+	}
 
 
-	
 }
 
 /*VERSION SMARTPHONE*/
@@ -688,240 +698,232 @@ article
 @media all and (max-width: 600px) 
 {
 	
+	body
+	{
+	width: 375px;
+	margin-left: auto;
+	margin-right: auto;
+	}
 
-h1
-{
-    font-size:26px;
-}
+	/* En tête */
 
-h2
-{
-    font-size: 24px;
-	font-weight: bold;
-}
+	header
+	{
+		align-items: center;
+	}
 
-nav
-{	
-font-size: 22px;		
-}
+	.ancres
+	{
+		display: none;
+	}
 
-h3
-{
- font-size: 20px;
-}
+	nav ul
+	{
+		list-style-type: none;
+		display: flex;
+		margin-right:40px;
+	}
 
-h4
-{
-font-size: 19px;   
-}
+	nav li
+	{
+		padding:30px; 
+	}
 
-h5
-{
-font-size: 18px;
-}
+	.barre-recherche
+	{
+		justify-content: center;
+	}
 
-p
-{
-    font-size: 17px;
-}
+	.filtres
+	{
+		margin-top:10px;
+		width: 100%;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: center;
+	}
 
-input::placeholder 
-{
-  	font-size: 18px;
-}
 
-/* En tête */
+	.bloc-filtre
+	{
+		align-items: center;
+		width:130px;
+	}
 
-header
-{
-	align-items: center;
-	margin: 10px;
-}
+	.texte-filtre
+	{
+		font-size: 15px;	
+	}
+
+
+	#nbr-dispos
+	{
+		width: 100%;
+		margin-top:10px;
+		justify-content: flex-start;
+	}
+
+
+	/* contenu principal */
+
+	#main-content
+	{
+		flex-direction: column-reverse;
+	}
+
+	.hebergements-resultats
+	{
+
 	
-.ancres
-{
-    display: none;
-}
+		margin-top: 20px;
+		width : 100%;
+		height: 1400px;
+		
+	}
 
+	#conteneur-hebergements-resultats
+	{
 
-.barre-recherche
-{
-  	justify-content: center;
-}
-
-.filtres
-{
-	margin-top:10px;
+	margin:0px;
 	width: 100%;
-	justify-content: space-between;
-	align-items: center;
-}
-
-	
-.bloc-filtre
-{
-	align-items: center;
-	width:130px;
-}
-
-.texte-filtre
-{
-	font-size: 15px;	
-}
-
-
-#nbr-dispos
-{
-	width: 100%;
-	margin-top:10px;
-	justify-content: flex-start;
-}
-
-
-/* contenu principal */
-
-#main-content
-{
-	flex-direction: column-reverse;
-}
-
-.hebergements-resultats
-{
-    
-    background-color: #F2F2F2;
-	margin-top: 20px;
-    width : 100%;
-	height: 850px;
-}
-
-#conteneur-hebergements-resultats
-{
-
-margin:20px;
-height: 800px;	
-}
-
-#conteneur-vignettes-article
-{
-    height:700px; 
-}
-
-.vignette_hebergement
-{
-    width: 300px;
-	height:200px;
-}
-
-.photo-hebergement
- {
-	width: 286px;
-	height:110px;
-}
-
-
-aside
-{
-    width :100%;
-	height: 700px;	
-}
-
-#conteneur-aside
-{
-margin:0px;	
-}
-
-#en-tete-pop
-{
-	width: 100%;
-}
-
-#logo-fleche
-{
-	font-size: 20px;
-}
-
-#conteneur-pop
-{
-	height:600px;
-	width:100%;
-	margin-top:0px;
-}
-
-.pop
-{
-    height:140px;
-	width :600px;
-    
-}
-
-.photo-txt-pop
-{
-    height:134px;
-	width : 600px;
-}
-
-.photo-pop
-
-{  
-	 width:60%;	 
-}
-
-.descriptif-pop
-{
-	justify-content: space-around;
-}
-
-article
-{
-   height : 700px;
-	margin-top: 50px;
-}
-
-#conteneur-vignettes-activites 
-{
-    display: flex;
-    flex-flow: row wrap;
-    height:450px;	
-}
-
-.act
-{
-	
-	width: 320px;
-	height: 210px;
-}
-
-
-#port, #fort, #iles, #calanques, #Notre-Dame, #parc
-{
-
-	width:320px ;
-    height: 200px ;
-}
-/* Pied de page */
-footer 
-{
-    background-color: #F2F2F2; 
-}
-
-.txt-footer
-{
-	width: 100%;
+	height: 1400px;	
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	align-items: center;
-	margin: 0px;
-	padding:0px;	
-}
+	
+	
+	}
 
-.bloc-txt
-{
-display: flex;
-flex-flow: column wrap;
-align-items: center;
-font-size: 14px;
-line-height: 30px;
-}	
+	#conteneur-vignettes-article
+	{
+		height:1300px; 
+		width: 100%;
+		justify-content: center;	
+	}
+
+	.vignette_hebergement
+	{
+		width: 300px;
+		height:200px;
+		
+	}
+
+	.photo-hebergement
+	 {
+		width: 286px;
+		height:110px;
+	}
+
+
+	aside
+	{
+		width :100%;
+		height: 650px;	
+	}
+
+	#conteneur-aside
+	{
+	margin:1px;	
+	}
+
+	#en-tete-pop
+	{
+		width: 330px;
+	}
+
+	#logo-fleche
+	{
+		font-size: 20px;
+	}
+
+	#conteneur-pop
+	{
+		height:600px;
+		width:100%;
+		margin-top:0px;
+	}
+
+	.pop
+	{
+		height:160px;
+		width :100%;
+
+	}
+
+	.photo-txt-pop
+	{
+		height:160px;
+		width : 100%;
+	}
+
+	.photo-pop
+
+	{  
+		 width:60%;	 
+	}
+
+	.descriptif-pop
+	{
+		justify-content: space-around;
+	}
+
+	article
+	{
+	   height :1350px;
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	
+	    
+	}
+
+	#conteneur-vignettes-activites 
+	{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		height:450px;	
+	}
+
+	.act
+	{
+
+		width: 320px;
+		height: 210px;
+	}
+
+
+	#port, #fort, #iles, #calanques, #Notre-Dame, #parc
+	{
+
+		width:320px ;
+		height: 200px ;
+	}
+	/* Pied de page */
+	footer 
+	{
+		background-color: #F2F2F2; 
+	}
+
+	.txt-footer
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0px;
+		padding:0px;	
+	}
+
+	.bloc-txt
+	{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	font-size: 14px;
+	line-height: 30px;
+	}	
 	
 }
