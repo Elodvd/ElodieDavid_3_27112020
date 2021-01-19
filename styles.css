@@ -685,24 +685,24 @@ article
 
 /*VERSION SMARTPHONE*/
 
-@media screen and (max-width: 719px) 
+@media all and (max-width: 600px) 
 {
 	
 
 h1
 {
-    font-size:30px;
+    font-size:26px;
 }
 
 h2
 {
-    font-size: 28px;
+    font-size: 24px;
 	font-weight: bold;
 }
 
 nav
 {	
-font-size: 26px;		
+font-size: 22px;		
 }
 
 h3
@@ -735,7 +735,7 @@ input::placeholder
 header
 {
 	align-items: center;
-	margin: 15px;
+	margin: 10px;
 }
 	
 .ancres
