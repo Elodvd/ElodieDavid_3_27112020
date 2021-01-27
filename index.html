@@ -7,97 +7,89 @@
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"> 
         <link rel="stylesheet" href="styles.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
     </head>
     
 
-    <body>   
-
-            <header>
-
-                <div id="logo">
-                    <img src="images/logo/Reservia.svg" alt="logo Reservia">   
-                </div>
+    <body>  
+		
+		<header>
+        	<div id="logo">
+            	<img src="images/logo/Reservia.svg" alt="logo Reservia">   
+            </div>
 				
-				<nav>
-					<span> 
-						<a href="#hebergements" >Hébergements</a> 
-						<a href="#activites"> Activités </a> 
-					</span>
-					<a href="#sinscrire">
-							<p id="inscription">S'inscrire</p>
-						</a>		
-				</nav>
-				 
-				     
-			</header> 
+			<nav>
+				<span> 
+					<a href="#hebergements" >Hébergements</a> 
+					<a href="#activites"> Activités </a> 
+				</span>
+				<a href="#sinscrire">
+					<p id="inscription">S'inscrire</p>
+				</a>		
+			</nav>	     
+		</header> 
 			
-			<section>
-			
-                <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p> En plein centre ville ou en pleine nature </p>
+		<section>
+			<h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p> En plein centre ville ou en pleine nature </p>
 
-                <div class="barre-recherche">
-                    <div id="mapmarker">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <form> 
-                        <input id="text" type="text" name ="lieu" placeholder="Marseille, France" size="30">
-                    </form>
-					<a href="#" id="bouton-bleu">Rechercher<i class="fab fa-sistrix"></i></a> 
+        	<div class="barre-recherche">
+            	<div id="mapmarker">
+                	<i class="fas fa-map-marker-alt"></i>
                 </div>
+                <form> 
+                	<input id="text" type="text" name ="lieu" placeholder="Marseille, France" size="30">
+                </form>
+				<a href="#" id="bouton-bleu">Rechercher<i class="fab fa-sistrix"></i></a> 
+            </div>
                
-                <div class="filtres">
-					
-                    <h3 id="Titre-filtres"> Filtres </h3>
-					<div id="liste-filtres">
-						<a class="bloc-filtre" href="">
-							<div class="logo-filtre">
-								<i class="fas fa-money-bill-wave"></i>
-							</div>
-							<p class="texte-filtre">Economique</p>
-						</a>
+            <div class="filtres">
+				<h3 id="Titre-filtres"> Filtres </h3>
+				<div id="liste-filtres">
+					<a class="bloc-filtre" href="">
+						<div class="logo-filtre">
+							<i class="fas fa-money-bill-wave"></i>
+						</div>
+						<p class="texte-filtre">Economique</p>
+					</a>
 
-						<a class="bloc-filtre" href="">
-							<div class="logo-filtre">
-								<i class="fas fa-child"></i>
-							</div>	
-							<p class="texte-filtre">Familial</p>
-						</a>
+					<a class="bloc-filtre" href="">
+						<div class="logo-filtre">
+							<i class="fas fa-child"></i>
+						</div>	
+						<p class="texte-filtre">Familial</p>
+					</a>
 
-						<a class="bloc-filtre" href="">
-							<div class="logo-filtre">
-								<i class="fas fa-heart"></i>
-							</div>
-							<p class="texte-filtre">Romantique</p>
-						</a>
+					<a class="bloc-filtre" href="">
+						<div class="logo-filtre">
+							<i class="fas fa-heart"></i>
+						</div>
+						<p class="texte-filtre">Romantique</p>
+					</a>
 
-						<a class="bloc-filtre" href="">
-							<div class="logo-filtre">
-								<i class="fas fa-dog"></i>
-							</div>
-							<p class="texte-filtre">Animaux autorisés</p>
-						</a>
-					</div>
+					<a class="bloc-filtre" href="">
+						<div class="logo-filtre">
+							<i class="fas fa-dog"></i>
+						</div>
+						<p class="texte-filtre">Animaux autorisés</p>
+					</a>
 				</div>
+			</div>
 				
-				<div id="nbr-dispos">
-					<div id="logo-i">
-						<i class="fas fa-info"></i>
-					</div>
-					<p> Plus de 500 logements sont disponibles dans cette ville</p>
+			<div id="nbr-dispos">
+				<div id="logo-i">
+					<i class="fas fa-info"></i>
 				</div>
-             </section>
+				<p> Plus de 500 logements sont disponibles dans cette ville</p>
+			</div>
+          </section>
 
-            
-            <main id="main-content">
+          <main id="main-content">
 
-                <section class="hebergements-resultats">
-					<div id="conteneur-hebergements-resultats"> 
-						<div><h2> Hébergements à Marseille </h2></div>
-						<div id="conteneur-vignettes-article"> 
+          	<section class="hebergements-resultats">
+				<div id="conteneur-hebergements-resultats"> 
+					<div><h2> Hébergements à Marseille </h2></div>
+					<div id="conteneur-vignettes-article"> 
 								<a class="vignette_hebergement" href="#">
 									<div id="Cannebiere" class="photo-hebergement"></div>
 									<div class="descriptif-photo-hebergement"> 
@@ -248,30 +240,29 @@
 									</div>
 								</a>
 							</div> 
+					<div><h3> Afficher plus </h3></div>      
+				</div>
+            </section>      
 
-						<div><h3> Afficher plus </h3></div>      
+            <aside>
+		    	<div id="conteneur-aside">
+					<div id="en-tete-pop">	
+						<h2> Les plus populaires </h2>
+						<div id="logo-fleche"> 
+							<i class="fas fa-chart-line"></i>
+						</div>										
 					</div>
-                </section>      
 
-                <aside>
-					<div id="conteneur-aside">
-						<div id="en-tete-pop">	
-							<h2> Les plus populaires </h2>
-							<div id="logo-fleche"> 
-								<i class="fas fa-chart-line"></i>
-							</div>										
-						</div>
-
-						<div id="conteneur-pop">
-							<a class="pop" href="#"> 
-								<div class="photo-txt-pop">
-									<div id="Hotel-Soleil" class="photo-pop"> </div>
-									<div class="descriptif-pop">
-										<div class="nom-prix-pop">
-											<h3>Hôtel Le soleil du matin</h3>
-											<p> Nuit à partir de 128€</p>
-										</div>
-										<div class="ligne-etoiles" >	
+					<div id="conteneur-pop">
+						<a class="pop" href="#"> 
+							<div class="photo-txt-pop">
+								<div id="Hotel-Soleil" class="photo-pop"> </div>
+								<div class="descriptif-pop">
+									<div class="nom-prix-pop">
+										<h3>Hôtel Le soleil du matin</h3>
+										<p> Nuit à partir de 128€</p>
+									</div>
+									<div class="ligne-etoiles" >	
 												<div class="etoile-bleue">
 													<i class="fas fa-star"></i> 
 												</div>
@@ -290,19 +281,19 @@
 
 										
 										</div>
-									</div>
 								</div>
-							</a>
+							</div>
+						</a>
 
-							<a class="pop" href="#"> 
-								<div class="photo-txt-pop">
-									<div id="Au-coeur-eau" class="photo-pop"> </div>
-									<div class="descriptif-pop">
-										<div class="nom-prix-pop">
-											<h3>Au coeur de l'eau Chambres d'Hôtes</h3>
-											<p> Nuit à partir de 71€</p>
-										</div>
-										<div class="ligne-etoiles">	
+						<a class="pop" href="#"> 
+							<div class="photo-txt-pop">
+								<div id="Au-coeur-eau" class="photo-pop"> </div>
+								<div class="descriptif-pop">
+									<div class="nom-prix-pop">
+										<h3>Au coeur de l'eau Chambres d'Hôtes</h3>
+										<p> Nuit à partir de 71€</p>
+									</div>
+									<div class="ligne-etoiles">	
 													<div class="etoile-bleue">
 														<i class="fas fa-star"></i> 
 													</div>
@@ -319,19 +310,19 @@
 														<i class="fas fa-star"></i> 
 													</div>
 											</div>
-										</div>
-									</div>
-							</a>
+								</div>
+							</div>
+						</a>
 
-							<a class="pop" href="#"> 
-								<div class="photo-txt-pop">
-									<div id="Hotel-Bleu" class="photo-pop"> </div>
-									<div class="descriptif-pop">
-										<div class="nom-prix-pop">
-											<h3>Hôtel Tout bleu et Blanc</h3>
-											<p> Nuit à partir de 68€</p>
-										</div>
-										<div class="ligne-etoiles">	
+						<a class="pop" href="#"> 
+							<div class="photo-txt-pop">
+								<div id="Hotel-Bleu" class="photo-pop"> </div>
+								<div class="descriptif-pop">
+									<div class="nom-prix-pop">
+										<h3>Hôtel Tout bleu et Blanc</h3>
+										<p> Nuit à partir de 68€</p>
+									</div>
+									<div class="ligne-etoiles">	
 												<div class="etoile-bleue">
 													<i class="fas fa-star"></i> 
 												</div>
@@ -348,49 +339,48 @@
 													<i class="fas fa-star"></i> 
 												</div>
 											</div>
-									</div>
 								</div>
-							</a>
-						</div>
+							</div>
+						</a>
 					</div>
-                </aside>
+				</div>
+              </aside>
             </main>
             
             <article>
-
                 <h2> Activités à Marseille </h2>
                 
 				<section id="conteneur-vignettes-activites">
-				
-						<a class="act" href="#">
-							<div id="port"></div>
-							<h4 class="txt-activites">Vieux Port</h4> 
-						</a>
+		
+					<a class="act" href="#">
+						<div id="port"></div>
+						<h4 class="txt-activites">Vieux Port</h4> 
+					</a>
 
-						<a class ="act"  href="#">
-							<div id="fort"></div>
-							<h4 class="txt-activites">Fort de Pomègues</h4>
-						</a>
+					<a class ="act"  href="#">
+						<div id="fort"></div>
+						<h4 class="txt-activites">Fort de Pomègues</h4>
+					</a>
 
-						<a  class="act" href="#">
-							<div id="iles"></div>
-							<h4 class="txt-activites">Îles du Frioul</h4> 
-						</a>
+					<a  class="act" href="#">
+						<div id="iles"></div>
+						<h4 class="txt-activites">Îles du Frioul</h4> 
+					</a>
 
-						<a  class="act" href="#">
-							<div id="calanques"></div>
-							<h4 class="txt-activites">Parc National des Calanques</h4> 
-						</a>       
+					<a  class="act" href="#">
+						<div id="calanques"></div>
+						<h4 class="txt-activites">Parc National des Calanques</h4> 
+					</a>       
 					
-						<a  class="act" href="#">
-							<div id="Notre-Dame"></div>
-							<h4 class="txt-activites">Notre-Dame-de-la-Garde</h4> 
-						</a>      
+					<a  class="act" href="#">
+						<div id="Notre-Dame"></div>
+						<h4 class="txt-activites">Notre-Dame-de-la-Garde</h4> 
+					</a>      
 
-						<a  class="act" href="#">
-							<div id="parc"></div>
-							<h4 class="txt-activites">Parc Longchamp</h4> 
-						</a>
+					<a  class="act" href="#">
+						<div id="parc"></div>
+						<h4 class="txt-activites">Parc Longchamp</h4> 
+					</a>
 				  
 				</section>
             </article>
@@ -399,26 +389,23 @@
 				<div class="txt-footer">
 					<section class="bloc-txt">
 						<h3>A propos </h3>
-							<a href="#">Fonctionnement du site</a>
+						<a href="#">Fonctionnement du site</a>
 						<a href="#">Conditions générales de vente</a>
 						<a href="#">Données et confidentialité</a>
 					</section>    
 
 					<section class="bloc-txt">
 						<h3> Nos hébergements </h3>
-							<a href="#">Charte qualité</a>
-							<a href="#">Soumettre votre hôtel</a>
+						<a href="#">Charte qualité</a>
+						<a href="#">Soumettre votre hôtel</a>
 					</section>
 
 					 <section class="bloc-txt">
 						<h3> Assistance </h3>
-						 	<a href="#">Centre d'aide</a>
-						 	<a href="#">Nous contacter</a>
+						 <a href="#">Centre d'aide</a>
+						 <a href="#">Nous contacter</a>
 					</section>
 				</div>
-
             </footer>  
-
     </body>
-
 </html>
