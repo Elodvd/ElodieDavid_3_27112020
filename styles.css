@@ -216,7 +216,7 @@ span a:focus{
 .hebergements-resultats{
     border-radius: 20px;
     background-color: #F2F2F2;
-    width : 65%;
+    width : 66%;
 	height: 600px;
 }
 
@@ -236,7 +236,7 @@ span a:focus{
 }
 
 .vignette_hebergement{
-    width: 238px;
+    width: 220px;
 	height:190px;
 	border-radius: 10px;
 	background-color: white;
@@ -246,7 +246,7 @@ span a:focus{
 }
 
 .photo-hebergement{
-	width: 230px;
+	width: 212px;
 	height:110px;
 	background-size: cover;
 	background-position: bottom;
@@ -784,7 +784,7 @@ footer{
 /*VERSION GRANDS ECRANS*/
 
 @media all and (min-width: 1700px){
-	
+
 .hebergements-resultats{
 	height: 630px;
 }
@@ -813,7 +813,7 @@ aside{
 
 .pop{
     height:160px;
-	width : 400px;
+	width : 415px;
 	justify-content: space-between;
 }
 
@@ -836,7 +836,7 @@ article{
 }
 
 #port, #fort, #iles, #calanques, #Notre-Dame, #parc{
-	width:350px ;
+	width:330px ;
 }
 
 	
