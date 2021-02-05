@@ -79,9 +79,10 @@ nav a{
 	padding-top: 20px;
 }
 
-span a:focus{
+span a:hover{
 	color:#0065FC;	
 	border-top: solid #0065FC 2px;
+
 }
 
 #inscription{
@@ -606,7 +607,7 @@ article{
 
 /*VERSION SMARTPHONE*/
 
-@media all and (max-width: 600px) 
+@media all and (max-width: 719px) 
 {
 	
 	/* En tête */
@@ -627,24 +628,24 @@ span{
 
 span a{
 	padding-bottom: 20px;
-
+	padding-left: 100px;
+	padding-right: 100px;
 }
 	
-span a:focus{
+span a:hover{
 	border-top: none;
 	border-bottom: solid #0065FC 3px;
 }
 
 nav{
-margin-top: 30px;
-width: 100%;
-
+	margin-top: 30px;
+	width: 100%;
 }
 	
 #inscription{
-position: absolute;
-right: 5%;
-top:35px;
+	position: absolute;
+	right: 5%;
+	top:35px;
 }
 	
 .barre-recherche{
